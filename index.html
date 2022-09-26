@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./stylesheet.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header id="header">
+    <section class="logo-navs">
+      <img src="./images/logo.svg" alt="logo" class="logo">
+
+      <section class="links">
+          <a href="#" class="collection">Collection</a>
+          <a href="#" class="collection">Men</a>
+          <a href="#" class="collection">Women</a>
+          <a href="#" class="collection">About</a>
+          <a href="#" class="collection">Contact</a>
+        </section>
+    </section>
+      
+      <section class="cart-dp">
+        <img src="./images/icon-cart.svg" alt="cart" class="cart">
+        <img src="./images/image-avatar.png" alt="cart" class="avatar">
+       
+        <div class="modal-cart">
+          <div>Cart</div>
+          <p>Your cart is empty</p>
+        </div>
+        <div class="modal-cart-full ">
+            <div>Cart</div>
+            <div class="sub-full-cart">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">
+              <p class="cart-text">Fall Limited Edition Sneakers $125 x 3 <span class="total-price">$375</span></p>
+            </div>
+            <button class="check-out">Checkout</button>
+        </div>
+      </section>
+  </header>
+  
+  <main class="main">
+    <!-- Image section -->
+        <section class="images">
+            <img src="./images/image-product-1.jpg" alt="" class="big-image">
+            <section class="thumbnails">
+              <img id="thumb-1" class="thumbnail" src="./images/image-product-1.jpg" alt="">
+              <img id="thumb-2" class="thumbnail" src="./images/image-product-2.jpg" alt="">
+              <img  id="thumb-3" class="thumbnail" src="./images/image-product-3.jpg" alt="">
+              <img id="thumb-4" class="thumbnail" src="./images/image-product-4.jpg" alt="">
+            </section>
+        </section>
+  
+        <section class="texts">
+            <div class="heading-texts">
+              <h3>  Sneaker Company</h3>
+  
+              <h1> Fall Limited Edition <br> Sneakers</h1>
+            </div>
+  
+            <p class="paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="prices">
+              <p class="price-and-discount"><strong id="price-and-discount">  $125.00</strong> <span>  50%</span></p>
+              <p class="original-price"> $250.00</p>
+            </div>
+  
+            <section class="add-to-cart">
+                <section class="quantity">
+                  <img src="./images/icon-minus.svg" alt="" id="minus" class="quantity-btn" >
+                  <p class="quantity-figure">0</p>
+                  <img src="./images/icon-plus.svg" alt="" id="plus" class="quantity-btn" >
+                </section>
+                <button class="add-to-cart-btn" type="submit"><img src="./images/icon-cart-white.svg" alt=""> Add to cart</button>
+            </section>
+  
+        </section>
+  </main>
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
